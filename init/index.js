@@ -4,8 +4,8 @@ if (process.env.NODE_ENV != "production") {
 
 const mongoose = require("mongoose");
 const { data: sampleListings } = require("./data.js");
-const Listing = require("../modules/listing.js");
-const User = require("../modules/user.js");
+const Listing = require("../models/listing.js");
+const User = require("../models/user.js");
 
 const dbUrl=process.env.ATLASDB_URL;
 
